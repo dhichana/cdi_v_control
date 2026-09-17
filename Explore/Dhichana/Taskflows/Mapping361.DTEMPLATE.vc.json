@@ -496,7 +496,7 @@
             "simpleFilterConditions" : [
               {
                 "fieldName" : "STATUS",
-                "filterValue" : "'active'",
+                "filterValue" : "'inactive'",
                 "operator" : "="
               }
             ]
@@ -506,7 +506,7 @@
             "simpleFilterConditions" : [
               {
                 "fieldName" : "STATUS",
-                "filterValue" : "'inactive'",
+                "filterValue" : "\"active\"",
                 "operator" : "="
               }
             ]
@@ -767,5 +767,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2026-09-17 01:21:14 PDT"
+  "vcsExportTime" : "2026-09-17 01:24:08 PDT"
 }
