@@ -1,0 +1,568 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "Mapping363",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Expression -> Target"
+      },
+      {
+        "link" : "Source -> Expression"
+      }
+    ],
+    "transformations" : [
+      {
+        "augmented" : "false",
+        "createTime" : "2026-09-16T08:58:09.031Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "CUSTOMER_ID"
+            },
+            "name" : "CUSTOMER_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_NAME"
+            },
+            "name" : "FIRST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 50,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_NAME"
+            },
+            "name" : "LAST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 50,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EMAIL"
+            },
+            "name" : "EMAIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 100,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PHONE"
+            },
+            "name" : "PHONE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CITY"
+            },
+            "name" : "CITY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 50,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@1qLF6ld5AnaiTOKL9QvheV",
+          "connectionName" : "scd_orc_tgt",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "CUSTOMERS",
+            "label" : "CUSTOMERS",
+            "objectName" : "CUSTOMERS",
+            "path" : "CUSTOMERS",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "CUSTOMER_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "CUSTOMER_ID",
+                "nativeName" : "CUSTOMER_ID",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              },
+              {
+                "name" : "FIRST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "FIRST_NAME",
+                "nativeName" : "FIRST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 50,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              },
+              {
+                "name" : "LAST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAST_NAME",
+                "nativeName" : "LAST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 50,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              },
+              {
+                "name" : "EMAIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMAIL",
+                "nativeName" : "EMAIL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 100,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              },
+              {
+                "name" : "PHONE",
+                "fieldType" : "CONNECTOR",
+                "label" : "PHONE",
+                "nativeName" : "PHONE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              },
+              {
+                "name" : "CITY",
+                "fieldType" : "CONNECTOR",
+                "label" : "CITY",
+                "nativeName" : "CITY",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 50,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2026-09-16T08:58:09.031Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : [
+          "CUSTOMER_ID"
+        ],
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "CUSTOMER_ID"
+            },
+            "name" : "CUSTOMER_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_NAME"
+            },
+            "name" : "FIRST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 50,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_NAME"
+            },
+            "name" : "LAST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 50,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EMAIL"
+            },
+            "name" : "EMAIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 100,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PHONE"
+            },
+            "name" : "PHONE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CITY"
+            },
+            "name" : "CITY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 50,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@1qLF6ld5AnaiTOKL9QvheV",
+          "connectionName" : "scd_orc_tgt",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "CUSTOMERS",
+            "label" : "CUSTOMERS",
+            "objectName" : "CUSTOMERS",
+            "path" : "CUSTOMERS",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "CUSTOMER_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "CUSTOMER_ID",
+                "nativeName" : "CUSTOMER_ID",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              },
+              {
+                "name" : "FIRST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "FIRST_NAME",
+                "nativeName" : "FIRST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 50,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              },
+              {
+                "name" : "LAST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAST_NAME",
+                "nativeName" : "LAST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 50,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              },
+              {
+                "name" : "EMAIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMAIL",
+                "nativeName" : "EMAIL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 100,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              },
+              {
+                "name" : "PHONE",
+                "fieldType" : "CONNECTOR",
+                "label" : "PHONE",
+                "nativeName" : "PHONE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              },
+              {
+                "name" : "CITY",
+                "fieldType" : "CONNECTOR",
+                "label" : "CITY",
+                "nativeName" : "CITY",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 50,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Update"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "CUSTOMER_ID",
+              "toField" : {
+                "name" : "CUSTOMER_ID"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "FIRST_NAME",
+              "toField" : {
+                "name" : "FIRST_NAME"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "LAST_NAME",
+              "toField" : {
+                "name" : "LAST_NAME"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "EMAIL",
+              "toField" : {
+                "name" : "EMAIL"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "PHONE",
+              "toField" : {
+                "name" : "PHONE"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "CITY",
+              "toField" : {
+                "name" : "CITY"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2026-09-16T09:00:02.103Z",
+        "name" : "Expression",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "expressionFieldRefs" : [
+          {
+            "name" : "FIRST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 50,
+            "scale" : 0
+          }
+        ],
+        "fields" : [
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "clean_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : ":UDF.UDF_clean_name(FIRST_NAME)"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-11-18 14:52:34 IST"
+}
